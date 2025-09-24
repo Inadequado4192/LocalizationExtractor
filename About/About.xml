@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Localization Extractor</name>
+    <author>Inadequado4192</author>
+    <packageId>inadequado4192.LocalizationExtractor</packageId>
+    <modVersion>1.0.0</modVersion>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+    <modDependencies>
+        <li>
+            <packageId>brrainz.harmony</packageId>
+            <displayName>Harmony</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+            <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+        </li>
+    </modDependencies>
+    <description>
+        <![CDATA[[h1]Purpose[/h1]
+Extracts translation files for the selected mod.
+This tool works differently from the game’s original system, so the order of strings may not always match the default extraction method. However, all required strings should still be included. [u]If you notice any missing entries, please let me know.[/u]
+
+[hr][/hr]
+
+[h2]Instructions[/h2]
+[list]
+    [*]Enable this mod together with the mod whose strings you want to extract.
+    [*]For best results, make sure that all possible dependencies of the target mod are also present. By [b]possible[/b] dependencies I mean mods that the target mod can interact with, but which are not strictly required.
+[/list]
+
+[h3]Example[/h3]
+Let’s take [b]Alpha Animals[/b]. Its loadFolders.xml contains the line:
+[code]<li IfModActive="VanillaExpanded.VPsycastsE">1.5/Mods/VanillaPsycastsExpanded</li>[/code]
+This means that if [b]Vanilla Psycasts Expanded[/b] is installed, [b]Alpha Animals[/b] will unlock extra features — and potentially new strings.
+Of course, these extra mods are not mandatory, but if you want a 100% complete translation, it’s better to have such possible dependencies enabled.
+        ]]>
+    </description>
+</ModMetaData>

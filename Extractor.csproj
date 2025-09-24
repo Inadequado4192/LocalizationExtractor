@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <LangVersion>10.0</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RimWorldLibs>D:\Programs\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed</RimWorldLibs>
+  </PropertyGroup>
+
+  <Target Name="MoveExtractorDll" AfterTargets="Build">
+    <Copy SourceFiles="bin\Debug\net472\Extractor.dll" DestinationFolder="./Assemblies" />
+  </Target>
+
+
+  <ItemGroup>
+    <Reference Include="$(RimWorldLibs)\*.dll">
+      <HintPath>$(RimWorldLibs)\%(Filename)%(Extension)</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <PackageReference Include="Lib.Harmony" Version="2.3.5" />
+  </ItemGroup>
+</Project>
