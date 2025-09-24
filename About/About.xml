@@ -4,6 +4,7 @@
     <author>Inadequado4192</author>
     <packageId>inadequado4192.LocalizationExtractor</packageId>
     <modVersion>1.0.0</modVersion>
+    <url>https://github.com/Inadequado4192/LocalizationExtractor</url>
     <supportedVersions>
         <li>1.6</li>
     </supportedVersions>
